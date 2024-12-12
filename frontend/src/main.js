@@ -1,7 +1,7 @@
-import { createSelect } from "./components/createHoursSelect/createHoursSelect";
+import { createSelect } from "./components/createHoursSelect/createHoursSelect.js";
 import { createMonthSelect } from "./components/CreateMothSelect/createMothSelect.js";
-import { createButton } from "./components/loadButton/loadButton";
-import { createSpinner, showSpinner, hideSpinner } from "./components/spinner/spinner";
+import { createButton } from "./components/loadButton/loadButton.js";
+import { createSpinner, showSpinner, hideSpinner } from "./components/spinner/spinner.js";
 import { showButton, createToggleButton } from "./components/toggleButton/toggleButton.js";
 
 const renderLogin = () => {
