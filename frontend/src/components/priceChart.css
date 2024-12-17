@@ -1,0 +1,23 @@
+.chart-container {
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--bg-color, white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.chart-title {
+    text-align: center;
+    color: var(--text-color, #333);
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+/* Modo oscuro */
+body[data-theme="dark"] .chart-container {
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+} 

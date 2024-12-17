@@ -1,0 +1,160 @@
+/* Estilos generales */
+:root {
+    --primary-color: #2196F3;
+    --primary-dark: #1976D2;
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.main-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de resultados */
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 60px; /* Espacio para el footer */
+}
+
+/* Controles de precio */
+#price-controls {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.controls-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para los selects y botón dentro de price-controls */
+#price-controls select,
+#price-controls button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-width: 120px;
+}
+
+#price-controls button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#price-controls button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Ajustes para modo oscuro */
+[data-theme="dark"] #price-controls select {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+}
+
+/* Modo oscuro */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: #333333;
+}
+
+[data-theme="dark"] nav {
+    background-color: #2a2a2a;
+}
+
+[data-theme="dark"] #price-controls {
+    background-color: #2a2a2a;
+}
+
+/* Footer siempre al final */
+.footer {
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor de contenido principal */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 60px; /* Espacio para el footer */
+}
+
+.error-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.error-container h2 {
+    color: #f44336;
+    margin-bottom: 16px;
+}
+
+.error-container button {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.error-container button:hover {
+    background-color: var(--primary-dark);
+} 

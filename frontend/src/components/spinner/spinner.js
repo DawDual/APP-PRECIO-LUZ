@@ -8,16 +8,17 @@
 export const createSpinner = () => {
     const spinner = document.createElement('div');
     spinner.id = 'spinner';
-    spinner.classList.add('hidden', 'spinner');
-    spinner.textContent="Cargando";
+    spinner.style.display = 'none';
+    spinner.innerHTML = '<div class="spinner-circle"></div>';
     return spinner;
 };
 
 export function showSpinner() {
-    const spinner= document.getElementById("spinner");
-    spinner.classList.remove("hidden");
+    const spinner = document.getElementById("spinner");
+    if (spinner) spinner.style.display = "block"; 
 }
-export function hideSpinner () {
-    const spinner= document.getElementById("spinner");
-    spinner.classList.add("hidden");
+
+export function hideSpinner() {
+    const spinner = document.getElementById("spinner");
+    if (spinner) spinner.style.display = "none";
 }
