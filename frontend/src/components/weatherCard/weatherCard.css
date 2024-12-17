@@ -1,0 +1,45 @@
+.weather-card {
+    background-color: var(--bg-color, #fff);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.weather-card h3 {
+    margin: 0 0 15px 0;
+    color: var(--text-color, #333);
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.weather-details {
+    text-align: left;
+}
+
+.temperature {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2196F3;
+    margin: 0;
+}
+
+.description {
+    color: var(--text-color, #666);
+    margin: 5px 0 0 0;
+    text-transform: capitalize;
+}
+
+/* Modo oscuro */
+body[data-theme="dark"] .weather-card {
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+} 
